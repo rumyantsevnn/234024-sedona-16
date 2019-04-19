@@ -1,3 +1,29 @@
 .photo-list {
   .reset-ls;
+  .df;
+  flex-wrap: wrap;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-sedona__image {
+    width: 324px;
+    height: 267px;
+  }
+
+  .photo-sedona__image--first {
+    width: 648px;
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-sedona__image {
+    width: 400px;
+    height: 267px;
+  }
+
+  .photo-sedona__image--first {
+    width: 1200px;
+    height: 400px;
+  }
 }

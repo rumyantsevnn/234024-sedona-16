@@ -1,0 +1,24 @@
+.body-container {
+  width: 320px;
+  .centering;
+}
+
+@media (min-width: @tablet-width) {
+  .body-container {
+    width: @tablet-width;
+    .centering;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  html {
+    background-color: @bgc-desktop;
+  }
+
+  .body-container {
+    background-color: @white;
+    width: @desktop-width;
+    .centering;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+  }
+}

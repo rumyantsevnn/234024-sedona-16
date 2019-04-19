@@ -1,4 +1,5 @@
 .reason {
+  box-sizing: border-box;
   background-color: @bgc-gray;
 }
 
@@ -8,10 +9,7 @@
 }
 
 .reason__title {
-  color: @black;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
+  .title-font;
 }
 
 .reason--blue-background {
@@ -22,4 +20,17 @@
 .reason__number--blue-background,
 .reason__description--blue-background {
   color: @white;
+}
+
+@media (min-width: @tablet-width) {
+  .reason {
+    max-width: 256px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reason {
+    width: 400px; /* Добавил временно для наглядности */
+    max-width: 400px;
+  }
 }

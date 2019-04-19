@@ -6,12 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="body-container">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип Седоны">
+        <img class="page-header__logo-image" width="102" height="83" src="http://placehold.it/102x83" alt="Логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <button class="main-nav__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -34,7 +34,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Фото и видео Седоны.</h1>
       <div class="main-banner-wrapper">
-        <img class="main-banner-wrapper__image" src="http://placehold.it/150x100" alt="Седона">
+        <img class="main-banner-wrapper__image main-banner-wrapper__image--index" width="320" height="389" src="http://placehold.it/320x389" alt="Добро пожаловать в Седону">
       </div>
       <div class="short-description">
         <p class="short-description__about-sedona">Фото и видео</p>
@@ -43,55 +43,63 @@
       <ul class="photo-list">
         <li class="photo-list__item photo-sedona">
           <a href="photo-1.html" class="photo-sedona__link">
-            <img class="photo-sedona__image" src="http://placehold.it/150x100" alt="Дорога в Седоне">
+            <img class="photo-sedona__image photo-sedona__image--first" width="280" height="280" src="http://placehold.it/280x280" alt="Дорога в Седоне">
           </a>
-          <h2 class="photo-sedona__title">Неродные просторы</h2>
-          <p class="photo-sedona__author">Автор фото: Борис</p>
-          <div class="photo-sedona__like likes-counter">
-            <button class="likes-counter__button">
-              <span class="visually-hidden">Like</span>
-            </button>
-            <span class="likes-counter__quantity">1350</span>
-          </div>
+          <section class="photo-sedona-description photo-title">
+            <h2 class="photo-sedona__title">Неродные просторы</h2>
+            <p class="photo-sedona__author">Автор фото: Борис</p>
+            <div class="photo-sedona__like likes-counter">
+              <button class="likes-counter__button">
+                <span class="visually-hidden">Like</span>
+              </button>
+              <span class="likes-counter__quantity">1350</span>
+            </div>
+          </section>
         </li>
         <li class="photo-list__item photo-sedona">
           <a href="photo-2.html" class="photo-sedona__link">
-            <img class="photo-sedona__image" src="http://placehold.it/150x100" alt="Растительность в Седоне">
+            <img class="photo-sedona__image" width="280" height="280" src="http://placehold.it/280x280" alt="Дорога в Седоне">
           </a>
-          <h2 class="photo-sedona__title">Местная растительность</h2>
-          <p class="photo-sedona__author">Автор фото: Сергей</p>
-          <div class="photo-sedona__like likes-counter">
-            <button class="likes-counter__button">
-              <span class="visually-hidden">Like</span>
-            </button>
-            <span class="likes-counter__quantity">143</span>
-          </div>
+          <section class="photo-sedona-description photo-title">
+            <h2 class="photo-sedona__title">Местная растительность</h2>
+            <p class="photo-sedona__author">Автор фото: Сергей</p>
+            <div class="photo-sedona__like likes-counter">
+              <button class="likes-counter__button">
+                <span class="visually-hidden">Like</span>
+              </button>
+              <span class="likes-counter__quantity">143</span>
+            </div>
+          </section>
         </li>
         <li class="photo-list__item photo-sedona">
           <a href="photo-3.html" class="photo-sedona__link">
-            <img class="photo-sedona__image" src="http://placehold.it/150x100" alt="Дорога ведущая на север">
+            <img class="photo-sedona__image" width="280" height="280" src="http://placehold.it/280x280" alt="Дорога в Седоне">
           </a>
-          <h2 class="photo-sedona__title">Дорога на север</h2>
-          <p class="photo-sedona__author">Автор фото: Петр</p>
-          <div class="photo-sedona__like likes-counter">
-            <button class="likes-counter__button">
-              <span class="visually-hidden">Like</span>
-            </button>
-            <span class="likes-counter__quantity">96</span>
-          </div>
+          <section class="photo-sedona-description photo-title">
+            <h2 class="photo-sedona__title">Дорога на север</h2>
+            <p class="photo-sedona__author">Автор фото: Петр</p>
+            <div class="photo-sedona__like likes-counter">
+              <button class="likes-counter__button">
+                <span class="visually-hidden">Like</span>
+              </button>
+              <span class="likes-counter__quantity">96</span>
+            </div>
+          </section>
         </li>
         <li class="photo-list__item photo-sedona">
           <a href="photo-4.html" class="photo-sedona__link">
-            <img class="photo-sedona__image" src="http://placehold.it/150x100" alt="Горы и каньоны в Седоне">
+            <img class="photo-sedona__image" width="280" height="280" src="http://placehold.it/280x280" alt="Дорога в Седоне">
           </a>
-          <h2 class="photo-sedona__title">Мост дьявола</h2>
-          <p class="photo-sedona__author">Автор фото: Антон</p>
-          <div class="photo-sedona__like likes-counter">
-            <button class="likes-counter__button">
-              <span class="visually-hidden">Like</span>
-            </button>
-            <span class="likes-counter__quantity">254</span>
-          </div>
+          <section class="photo-sedona-description photo-title">
+            <h2 class="photo-sedona__title">Мост дьявола</h2>
+            <p class="photo-sedona__author">Автор фото: Антон</p>
+            <div class="photo-sedona__like likes-counter">
+              <button class="likes-counter__button">
+                <span class="visually-hidden">Like</span>
+              </button>
+              <span class="likes-counter__quantity">254</span>
+            </div>
+          </section>
         </li>
       </ul>
       <!-- Здесь будет блок с видео из Седоны. -->
