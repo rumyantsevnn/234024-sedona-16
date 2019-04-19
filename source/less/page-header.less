@@ -1,0 +1,27 @@
+.page-header {
+  .df;
+  flex-direction: column;
+}
+
+.page-header__nav {
+  order: 1;
+}
+
+.page-header__logo {
+  order: 2;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: block;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    .horizontal-centering;
+  }
+}
