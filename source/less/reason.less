@@ -1,6 +1,19 @@
 .reason {
   box-sizing: border-box;
   background-color: @bgc-gray;
+
+  &--blue-background {
+    background-color: @bgc-blue;
+  }
+
+  @media (min-width: @tablet-width) {
+    max-width: 256px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px; /* Добавил временно для наглядности */
+    max-width: 400px;
+  }
 }
 
 .reason__title,
@@ -12,25 +25,8 @@
   .title-font;
 }
 
-.reason--blue-background {
-  background-color: @bgc-blue;
-}
-
 .reason__title--blue-background,
 .reason__number--blue-background,
 .reason__description--blue-background {
   color: @white;
-}
-
-@media (min-width: @tablet-width) {
-  .reason {
-    max-width: 256px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .reason {
-    width: 400px; /* Добавил временно для наглядности */
-    max-width: 400px;
-  }
 }

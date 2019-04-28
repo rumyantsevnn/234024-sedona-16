@@ -1,5 +1,20 @@
 .advantages {
-  .reset-ls;
+  .reset-indents;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+
+    .advantages__item {
+      max-width: 256px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .advantages__item {
+      max-width: 400px;
+    }
+  }
 }
 
 .advantages__title,
@@ -9,21 +24,4 @@
 
 .advantages__title {
   .title-font;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages {
-    .df;
-    flex-wrap: wrap;
-  }
-
-  .advantages__item {
-    max-width: 256px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .advantages__item {
-    max-width: 400px;
-  }
 }
