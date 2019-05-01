@@ -1,9 +1,34 @@
+@font-face {
+  font-weight: normal;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/PTSans.woff2") format("woff2"), url("../fonts/PTSans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "PT Sans";
+  font-style: normal;
+  src: url("../fonts/PTSansBold.woff2") format("woff2"), url("../fonts/PTSansBold.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
+
+  background: url("../preview/sedona-index-mobile.jpg") 50% 0 no-repeat;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../preview/sedona-index-tablet.jpg");
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../preview/sedona-index-desktop.jpg");
+  }
 }
 
 body {
   .reset-indents;
+  opacity: 0.8;
 }
 
 a,

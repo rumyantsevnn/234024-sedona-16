@@ -10,11 +10,36 @@
 
 .social-list {
   .reset-indents;
+  display: flex;
+}
+
+.social-list__item {
+  margin-right: 5px;
+}
+
+.social-list__link {
+  display: block;
+  position: relative;
+  padding: 24px 23px;
+  background-color: @bgc-blue;
+}
+
+.developed-by {
+  display: flex;
 }
 
 .developed-by__text {
   color: @black;
   line-height: 26px;
+}
+
+.developed-by__link::before {
+  display: block;
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-image: url("../img/htmlacademy.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {

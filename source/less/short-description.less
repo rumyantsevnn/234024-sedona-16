@@ -1,9 +1,30 @@
 .short-description__about-sedona {
-  .custom-font;
+  .title-font;
   .reset-indents;
+  text-align: center;
+  padding: 39px 30px;
+  padding-bottom: 15px;
 }
 
 .short-description__reasons {
   line-height: 26px;
   .reset-indents;
+  text-align: center;
+  padding: 12px 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .short-description__about-sedona {
+    .custom-font;
+    padding: 50px 80px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .short-description__about-sedona {
+    .custom-font;
+    padding: 50px 300px;
+    padding-bottom: 15px;
+  }
 }

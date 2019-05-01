@@ -1,11 +1,53 @@
+.main-banner-wrapper {
+  position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
 .main-banner-wrapper__image {
-  @media (min-width: @tablet-width) {
-    width: 768px;
-    height: 518px;
+  display: block;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  margin: 0 auto;
+}
+
+.main-banner-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 320px;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .main-banner-wrapper {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
-  @media (min-width: @desktop-width) {
+  .main-banner-wrapper__image {
+    width: 460px;
+    height: 350px;
+    padding-top: 77px;
+    padding-bottom: 91px;
+  }
+
+  .main-banner-wrapper::after {
+    width: 768px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-banner-wrapper {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .main-banner-wrapper::after {
     width: 1200px;
-    height: 518px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
