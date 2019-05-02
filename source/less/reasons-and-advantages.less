@@ -2,4 +2,26 @@
   .reset-indents;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 638px;
+}
+
+.reasons-and-advantages__item--bottom-border {
+  position: relative;
+}
+
+.reasons-and-advantages__item--bottom-border::after {
+  position: absolute;
+  z-index: 3;
+  display: block;
+  content: "";
+  width: 280px;
+  height: 1px;
+  background-color: #d6d6d6;
+  .horizontal-centering;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-and-advantages__item--bottom-border::after {
+    content: none;
+  }
 }

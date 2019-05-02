@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="pixel-glass-js-master/styles.css" rel="stylesheet">
     <script src="pixel-glass-js-master/script.js"></script>
@@ -37,14 +38,14 @@
       <div class="main-banner-wrapper">
         <img class="main-banner-wrapper__image main-banner-wrapper__image--index" width="282" height="214" src="img/text-sedona-index.svg" alt="Добро пожаловать в Седону">
       </div>
-      <div class="short-description">
+      <div class="short-description  short-description--triangle">
         <p class="short-description__about-sedona">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
         <p class="short-description__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </div>
       <ul class="reasons-and-advantages">
         <li class="reasons-and-advantages__item">
           <div class="reason-with-picture">
-            <section class="reason reason--blue-background">
+            <section class="reason reason--blue-background reason--custom-indent">
               <h2 class="reason__title reason__title--blue-background">Настоящий городок</h2>
               <span class="reason__number reason__number--blue-background">— №1 —</span>
               <p class="reason__description reason__description--blue-background">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -58,9 +59,9 @@
             </li>
             <li class="advantages__item">
               <h3 class="advantages__title">Сувениры</h3>
-              <p class="advantages__description">Не только китайского, но и местного производства!</p>
+              <p class="advantages__description advantages__description--custom-indent">Не только китайского,<br> но и местного производства!</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--custom-indent">
               <h3 class="advantages__title">Еда</h3>
               <p class="advantages__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
@@ -68,31 +69,31 @@
         </li>
         <li class="reasons-and-advantages__item">
           <div class="reason-with-picture">
-            <section class="reason reason--blue-background">
-              <h2 class="reason__title reason__title--blue-background">Там есть мост дьявола</h2>
+            <section class="reason reason--blue-background reason--custom-order">
+              <h2 class="reason__title reason__title--blue-background">Там есть<br> мост дьявола</h2>
               <span class="reason__number reason__number--blue-background">— №2 —</span>
-              <p class="reason__description reason__description--blue-background">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="reason__description reason__description--blue-background reason__description--custom-indents">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </section>
             <img class="reason-with-picture__image" width="320" height="260" src="img/main-bridge-mobile@1x.jpg" alt="Горы и каньоны в Седоне">
           </div>
         </li>
-        <li class="reasons-and-advantages__item">
-          <section class="reason">
+        <li class="reasons-and-advantages__item reasons-and-advantages__item--bottom-border">
+          <section class="reason reason--custom-indent-desktop">
             <h2 class="reason__title">Небольшая площадь</h2>
             <span class="reason__number">— №3 —</span>
             <p class="reason__description">Все интересные места находятся очень близко</p>
           </section>
         </li>
-        <li class="reasons-and-advantages__item">
-          <section class="reason">
-            <h2 class="reason__title">Красивая дорога</h2>
+        <li class="reasons-and-advantages__item reasons-and-advantages__item--bottom-border">
+          <section class="reason reason--custom-indent-desktop">
+            <h2 class="reason__title reason__title--custom-indent-desktop">Красивая дорога</h2>
             <span class="reason__number">— №4 —</span>
-            <p class="reason__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
+            <p class="reason__description reason__description--custom-indents-tablet reason__description--custom-indents-desktop">Ехать в седону из лас-вегаса совсем не скучно!</p>
           </section>
         </li>
         <li class="reasons-and-advantages__item">
           <section class="reason">
-            <h2 class="reason__title">Мало туристов</h2>
+            <h2 class="reason__title reason__title--custom-indent">Мало туристов</h2>
             <span class="reason__number">— №5 —</span>
             <p class="reason__description">Большинство едет в гранд каньон и толпится там</p>
           </section>

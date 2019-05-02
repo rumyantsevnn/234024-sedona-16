@@ -1,30 +1,60 @@
+.short-description {
+  position: relative;
+  padding: 39px 30px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+.short-description--triangle::after {
+  content: "";
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+}
+
 .short-description__about-sedona {
   .title-font;
   .reset-indents;
   text-align: center;
-  padding: 39px 30px;
-  padding-bottom: 15px;
+  margin-bottom: 28px;
 }
 
 .short-description__reasons {
   line-height: 26px;
   .reset-indents;
   text-align: center;
-  padding: 12px 30px;
 }
 
 @media (min-width: @tablet-width) {
+  .short-description {
+    padding: 50px 90px;
+    padding-bottom: 4px;
+    margin-bottom: 45px;
+  }
+
+  .short-description--triangle::after {
+    content: none;
+  }
+
   .short-description__about-sedona {
     .custom-font;
-    padding: 50px 80px;
-    padding-bottom: 15px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .short-description {
+    padding: 50px 300px;
+    padding-bottom: 4px;
+    margin-bottom: 45px;
+  }
+
   .short-description__about-sedona {
     .custom-font;
-    padding: 50px 300px;
-    padding-bottom: 15px;
   }
 }
