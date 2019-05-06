@@ -1,7 +1,15 @@
 .photo-list {
   .reset-indents;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.photo-list__item {
+  box-sizing: border-box;
+  margin-bottom: 22px;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {

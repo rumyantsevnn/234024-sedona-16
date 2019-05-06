@@ -1,8 +1,13 @@
 .short-description {
   position: relative;
-  padding: 39px 30px;
+  padding: 39px 23px;
   padding-bottom: 4px;
   margin-bottom: 5px;
+}
+
+.short-description--custom-indents {
+  padding-bottom: 22px;
+  margin-bottom: 0;
 }
 
 .short-description--triangle::after {
@@ -25,6 +30,10 @@
   margin-bottom: 28px;
 }
 
+.short-description__about-sedona--custom-indents {
+  margin-bottom: 24px;
+}
+
 .short-description__reasons {
   line-height: 26px;
   .reset-indents;
@@ -33,28 +42,39 @@
 
 @media (min-width: @tablet-width) {
   .short-description {
-    padding: 50px 90px;
-    padding-bottom: 4px;
-    margin-bottom: 45px;
+    padding: 75px 90px;
+    padding-bottom: 49px;
+    margin-bottom: 18px;
+  }
+
+  .short-description__about-sedona {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+
+  .short-description__reasons {
+    padding: 0 80px;
+  }
+
+  .short-description--border-bottom {
+    border: none;
   }
 
   .short-description--triangle::after {
     content: none;
   }
-
-  .short-description__about-sedona {
-    .custom-font;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .short-description {
-    padding: 50px 300px;
-    padding-bottom: 4px;
-    margin-bottom: 45px;
+    padding: 111px 300px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
   }
 
   .short-description__about-sedona {
-    .custom-font;
+    margin-bottom: 30px;
   }
 }
