@@ -13,6 +13,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .photo-list {
+    padding: 17px 60px;
+    padding-bottom: 0;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
   .photo-sedona__image {
     width: 324px;
     height: 267px;
@@ -22,9 +29,19 @@
     width: 648px;
     height: 400px;
   }
+
+  .photo-list__item {
+    width: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
+  .photo-list {
+    padding: 0;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
   .photo-sedona__image {
     width: 400px;
     height: 267px;
