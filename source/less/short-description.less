@@ -1,9 +1,108 @@
+.short-description {
+  position: relative;
+  padding: 39px 23px;
+  padding-bottom: 4px;
+  margin-bottom: 5px;
+}
+
+.short-description--custom-indents {
+  padding-bottom: 22px;
+  margin-bottom: 0;
+}
+
+.short-description--form {
+  padding: 38px 15px;
+  padding-bottom: 11px;
+}
+
+.short-description--triangle::after {
+  content: "";
+  width: 320px;
+  height: 37px;
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  background-image: url("../img/bg-triangle.svg");
+  background-repeat: no-repeat;
+}
+
 .short-description__about-sedona {
-  .fs-21-fw-700-lh-26;
+  .title-font;
   .reset-indents;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.short-description__about-sedona--custom-indents {
+  margin-bottom: 24px;
 }
 
 .short-description__reasons {
   line-height: 26px;
   .reset-indents;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .short-description {
+    padding: 75px 90px;
+    padding-bottom: 49px;
+    margin-bottom: 0;
+  }
+
+  .short-description--index {
+    padding: 50px 90px;
+  }
+
+  .short-description--form .short-description__reasons {
+    padding: 0 73px;
+  }
+
+  .short-description__about-sedona {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 28px;
+  }
+
+  .short-description--index .short-description__about-sedona {
+    .custom-font;
+    margin-bottom: 28px;
+  }
+
+  .short-description__reasons {
+    padding: 0 80px;
+  }
+
+  .short-description--index .short-description__reasons {
+    padding: 0 50px;
+  }
+
+  .short-description--border-bottom {
+    border: none;
+  }
+
+  .short-description--triangle::after {
+    content: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .short-description {
+    padding: 111px 300px;
+    padding-bottom: 34px;
+    margin-bottom: 34px;
+  }
+
+  .short-description--index {
+    padding: 50px 300px;
+    padding-bottom: 49px;
+    margin: 0;
+  }
+
+  .short-description__about-sedona {
+    margin-bottom: 30px;
+  }
 }
