@@ -21,6 +21,7 @@
 .feedback-form__main-list-item--button {
   border-top: none;
   padding: 30px 19px;
+  padding-right: 21px;
   padding-bottom: 15px;
 }
 
@@ -212,6 +213,10 @@
     padding-right: 0;
   }
 
+  .feedback-form__submit-button {
+    padding: 16px 15px;
+  }
+
   .feedback-form__required-fields {
     .reset-indents;
   }
@@ -274,5 +279,114 @@
 
   .feedback-form__main-list-item:nth-child(5) {
     padding-top: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-form__main-list-item:nth-child(1) {
+    padding-left: 80px;
+  }
+
+  .feedback-form__main-list-item:nth-child(2) {
+    padding-top: 32px;
+  }
+
+  .feedback-form__main-list {
+    padding: 0 60px;
+  }
+
+  .feedback-form__main-list-item:nth-child(2) legend {
+    margin-bottom: 75px;
+  }
+
+  .feedback-form__main-list-item:nth-child(3) legend {
+    text-align: center;
+  }
+
+  .feedback-form__contacts-item {
+    width: 50%;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+  .feedback-form__contacts-item label {
+    padding: 0;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback-form__list--row {
+    display: flex;
+  }
+
+  .feedback-form__list--attractions {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 10px;
+    padding-right: 0;
+  }
+
+  .feedback-form__main-list-item--button {
+    padding-top: 33px;
+  }
+
+  .feedback-form__attractions-item {
+    width: 25%;
+  }
+
+  .feedback-form__attractions-item label {
+    padding-left: 71px;
+  }
+
+  .feedback-form__attractions-item:nth-child(2) label {
+    padding-left: 94px;
+  }
+
+  .feedback-form__attractions-item:nth-child(3) label {
+    padding-left: 113px;
+  }
+
+  .feedback-form__attractions-item:nth-child(4) label {
+    padding-left: 114px;
+    padding-right: 2px;
+  }
+
+  .feedback-form__contacts-item:nth-child(1) {
+    padding-right: 80px;
+  }
+
+  .feedback-form__contacts-item:nth-child(1) label {
+    width: 112px;
+  }
+
+  .feedback-form__contacts-item:nth-child(2) label {
+    width: 264px;
+  }
+
+  .feedback-form__main-list-item:nth-child(4) {
+    padding-bottom: 8px;
+  }
+
+  .feedback-form__main-list-item:nth-child(4) legend {
+    padding: 0 300px;
+    margin-bottom: 8px;
+  }
+
+  .feedback-form__main-list-item:nth-child(5) {
+    padding-bottom: 18px;
+  }
+
+  .visually-hidden-form {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
   }
 }
