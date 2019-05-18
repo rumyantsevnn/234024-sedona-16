@@ -1,3 +1,17 @@
+.photo-sedona {
+  padding-top: 22px;
+  border-top: 1px solid @border;
+}
+
+.photo-sedona__link {
+  display: block;
+}
+
+.photo-sedona__image {
+  display: block;
+  margin: 0 auto;
+}
+
 .photo-sedona__title {
   .reset-indents;
   color: @black;
@@ -6,9 +20,18 @@
   line-height: 24px;
 }
 
+.photo-sedona__description {
+  padding: 16px 20px;
+}
+
 .photo-sedona__author {
   .reset-indents;
   text-transform: none;
+  margin-bottom: 8px;
+}
+
+.likes-counter__button {
+  margin-right: 17px;
 }
 
 .likes-counter__quantity {
@@ -16,14 +39,46 @@
   font-weight: 700;
 }
 
+@media (min-width: @tablet-width) {
+  .photo-sedona {
+    padding: 0;
+    border: none;
+  }
+
+  .photo-sedona__description {
+    padding-right: 29px;
+    padding-bottom: 8px;
+  }
+
+  .photo-sedona:nth-child(2n+1) .photo-sedona__description {
+    padding-right: 36px;
+  }
+
+  .photo-sedona--first:nth-child(1) .photo-sedona__description {
+    padding: 16px 20px;
+    padding-bottom: 9px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .photo-list__item {
     position: relative;
   }
 
-  .photo-sedona-description {
+  .photo-sedona__description {
+    box-sizing: border-box;
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 400px;
+  }
+
+  .photo-sedona--first .photo-sedona__description {
+    width: 1200px;
+  }
+
+  .photo-sedona__title,
+  .photo-sedona__author,
+  .likes-counter__quantity {
+    color: @white;
   }
 }
