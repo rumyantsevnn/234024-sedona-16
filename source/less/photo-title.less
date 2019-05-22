@@ -4,10 +4,18 @@
     display: flex;
     justify-content: space-between;
   }
+
+  .photo-sedona:nth-child(2n+1) .photo-title {
+    background-color: @photo-title;
+  }
+
+  .photo-sedona:first-child .photo-title {
+    background-color: @bgc-desktop;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-title {
+  .photo-sedona:nth-child(n) .photo-title {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
