@@ -11,10 +11,31 @@
 
 .advantages__item {
   box-sizing: border-box;
+  position: relative;
   padding-top: 28px;
   padding-right: 41px;
   padding-left: 69px;
   padding-bottom: 0;
+}
+
+.advantages__item-icon {
+  position: absolute;
+  fill: @bgc-blue;
+}
+
+.advantages__item-icon--house {
+  left: 21px;
+  top: 19px;
+}
+
+.advantages__item-icon--gift {
+  left: 24px;
+  top: 18px;
+}
+
+.advantages__item-icon-burger {
+  left: 18px;
+  top: 24px;
 }
 
 .advantages__title {
@@ -57,6 +78,28 @@
   .advantages__item--custom-indent {
     padding: 50px;
     padding-top: 160px;
+  }
+
+  .advantages__item-icon {
+    .horizontal-centering;
+  }
+
+  .advantages__item-icon--house {
+    width: 75px;
+    height: 72px;
+    top: 60px;
+  }
+
+  .advantages__item-icon--gift {
+    width: 64px;
+    height: 75px;
+    top: 57px;
+  }
+
+  .advantages__item-icon-burger {
+    width: 77px;
+    height: 68px;
+    top: 63px;
   }
 }
 

@@ -16,6 +16,7 @@
 }
 
 .video-sedona__player {
+  box-sizing: border-box;
   position: relative;
   padding-bottom: 66px;
 }
@@ -25,22 +26,70 @@
 }
 
 .video-sedona__scroll-bar {
+  box-sizing: border-box;
   position: absolute;
   width: 280px;
-  height: 45px;
+  padding: 22px;
+  padding-bottom: 20px;
   background-color: @black;
   opacity: 0.6;
   bottom: 66px;
   .horizontal-centering;
 }
 
+.video-sedona__scale {
+  width: 235px;
+  height: 3px;
+  background-color: @white;
+  opacity: 0.2;
+}
+
+.video-sedona__toggle {
+  position: absolute;
+  top: 19px;
+  left: 58px;
+  width: 9px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: @white;
+}
+
 .video-sedona__controls {
+  box-sizing: border-box;
   position: absolute;
   width: 280px;
   height: 66px;
+  padding: 0 25px;
   background-color: @bgc-desktop;
   bottom: 0;
   .horizontal-centering;
+}
+
+.video-sedona__button {
+  padding: 0;
+  border: none;
+  background-color: @bgc-desktop;
+}
+
+.video-button-fill {
+  fill: @video-button;
+}
+
+.replay-button {
+  position: absolute;
+  top: 22px;
+}
+
+.subtitles-button {
+  position: absolute;
+  top: 23px;
+  right: 74px;
+}
+
+.fullscreen-button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
 }
 
 @media (min-width: @tablet-width) {
@@ -73,12 +122,52 @@
     height: 93px;
     background-color: @black;
     opacity: 0.6;
-    bottom: 0;
+    bottom: -1px;
     .horizontal-centering;
+  }
+
+  .video-sedona__controls {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .video-sedona__scroll-bar {
+    padding: 45px 93px;
+  }
+
+  .video-sedona__scale {
+    width: 389px;
+  }
+
+  .video-sedona__toggle {
+    top: 41px;
+    left: 206px;
   }
 
   .video-sedona__player {
     padding: 0;
+  }
+
+  .video-sedona__button {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .video-button-fill {
+    fill: @white;
+  }
+
+  .replay-button {
+    top: 35px;
+    left: 35px;
+  }
+
+  .subtitles-button {
+    top: 36px;
+    right: 92px;
+  }
+
+  .fullscreen-button {
+    top: 36px;
+    right: 41px;
   }
 }
 
@@ -99,5 +188,18 @@
   .video-sedona__scroll-bar,
   .video-sedona__controls {
     width: 800px;
+    bottom: 0;
+  }
+
+  .video-sedona__scale {
+    width: 540px;
+  }
+
+  .subtitles-button {
+    right: 94px;
+  }
+
+  .fullscreen-button {
+    right: 43px;
   }
 }

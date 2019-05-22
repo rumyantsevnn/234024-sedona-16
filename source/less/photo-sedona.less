@@ -22,6 +22,7 @@
 
 .photo-sedona__description {
   padding: 16px 20px;
+  padding-bottom: 11px;
 }
 
 .photo-sedona__author {
@@ -31,7 +32,17 @@
 }
 
 .likes-counter__button {
-  margin-right: 17px;
+  position: relative;
+  padding: 0;
+  margin-right: 14px;
+  border: none;
+}
+
+.likes-counter__button-icon {
+  position: absolute;
+  top: -15px;
+  left: -23px;
+  opacity: 0.3;
 }
 
 .likes-counter__quantity {
@@ -48,6 +59,11 @@
   .photo-sedona__description {
     padding-right: 29px;
     padding-bottom: 8px;
+  }
+
+  .likes-counter__button-icon {
+    top: -13px;
+    left: -18px;
   }
 
   .photo-sedona:nth-child(2n+1) .photo-sedona__description {
@@ -70,6 +86,14 @@
     position: absolute;
     bottom: 0;
     width: 400px;
+  }
+
+  .likes-counter__button-icon {
+    opacity: 1;
+  }
+
+  .like-button-fill {
+    fill: @white;
   }
 
   .photo-sedona--first .photo-sedona__description {
