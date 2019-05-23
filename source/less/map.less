@@ -1,4 +1,45 @@
 .map {
+  position: relative;
+  z-index: 3;
   display: block;
   width: 100%;
+}
+
+.map-wrapper {
+  position: relative;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.map-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-repeat: no-repeat;
+  top: 161px;
+  left: 146px;
+}
+
+@media (min-width: @tablet-width) {
+  .map-wrapper {
+    background-image: url("../img/bg-map-bg-map-tablet@1x.jpg");
+  }
+
+  .map-wrapper::before {
+    top: 164px;
+    left: 370px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-wrapper {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+  }
+
+  .map-wrapper::before {
+    top: 162px;
+    left: 586px;
+  }
 }
