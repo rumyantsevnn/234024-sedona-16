@@ -1,11 +1,21 @@
 @media (min-width: @tablet-width) {
   .photo-title {
     background-color: @bgc-desktop;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .photo-sedona:nth-child(2n+1) .photo-title {
+    background-color: @photo-title;
+  }
+
+  .photo-sedona:first-child .photo-title {
+    background-color: @bgc-desktop;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo-title {
-    background-color: rgba(242, 242, 242, 0.3);
+  .photo-sedona:nth-child(n) .photo-title {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

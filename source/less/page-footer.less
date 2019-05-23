@@ -1,24 +1,117 @@
 .page-footer {
-  .df;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 30px 83px;
 }
 
 .page-footer__visitsedona-link {
-  .fs-21-fw-700-lh-26;
+  .custom-font;
+  text-align: center;
+  margin-bottom: 35px;
 }
 
 .social-list {
-  .reset-ls;
+  .reset-indents;
+  display: flex;
+  margin-bottom: 41px;
+}
+
+.social-list__item {
+  margin-right: 7px;
+}
+
+.social-list__item:nth-child(3) {
+  margin-right: 0;
+}
+
+.social-list__link {
+  display: block;
+  position: relative;
+  padding: 24px 23px;
+  background-color: @bgc-blue;
+}
+
+.social-list__link-icon {
+  position: absolute;
+  fill: @white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.developed-by {
+  display: flex;
+  margin: 0 auto;
 }
 
 .developed-by__text {
   color: @black;
   line-height: 26px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.developed-by__link {
+  display: block;
+  position: relative;
+  width: 27px;
+  height: 34px;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
+    padding: 36px 59px;
+    padding-left: 60px;
+    justify-content: space-between;
+  }
+
+  .page-footer__visitsedona-link {
+    .custom-font;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .social-list {
+    margin: 0;
+    padding-right: 6px;
+  }
+
+  .social-list__item {
+    margin-right: 7px;
+  }
+
+  .developed-by {
+    margin: 0;
+    vertical-align: middle;
+  }
+
+  .developed-by__link-icon {
+    position: absolute;
+    top: 6px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 36px 120px;
+    padding-right: 119px;
+  }
+
+  .social-list {
+    padding-right: 7px;
+  }
+
+  .social-list__item {
+    margin-right: 6px;
+  }
+
+  .developed-by__link-icon {
+    top: 7px;
   }
 }

@@ -1,7 +1,26 @@
 .reason {
+  position: relative;
   box-sizing: border-box;
   background-color: @bgc-gray;
+  text-align: center;
+  padding: 28px 35px;
+  padding-bottom: 27px;
 }
+
+.reason--blue-background {
+  background-color: @bgc-blue;
+  padding: 39px 20px;
+}
+
+.reason--custom-indent {
+  padding: 72px 20px;
+  padding-bottom: 40px;
+}
+
+.reason__title br {
+  display: none;
+}
+
 
 .reason__title,
 .reason__description {
@@ -10,10 +29,16 @@
 
 .reason__title {
   .title-font;
+  margin-bottom: 7px;
 }
 
-.reason--blue-background {
-  background-color: @bgc-blue;
+.reason__number {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.reason__description {
+  line-height: 21px;
 }
 
 .reason__title--blue-background,
@@ -25,12 +50,71 @@
 @media (min-width: @tablet-width) {
   .reason {
     max-width: 256px;
+    padding: 45px;
+    padding-bottom: 40px;
+  }
+
+  .reason--custom-indent {
+    padding: 45px;
+    padding-bottom: 40px;
+  }
+
+  .reason__title {
+    .custom-font;
+  }
+
+  .reason__description--custom-indents-tablet {
+    padding: 0 15px;
+  }
+
+  .reason__title--custom-indent {
+    padding: 0 10px;
+  }
+
+  .reason__title--blue-background {
+    color: @white;
+  }
+
+  .reason__title br {
+    display: block;
+  }
+
+  .reason__number {
+    margin-bottom: 22px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reason {
-    width: 400px; /* Добавил временно для наглядности */
     max-width: 400px;
+    padding: 46px 60px;
+    padding-bottom: 64px;
+  }
+
+  .reason--blue-background {
+    max-width: 400px;
+    padding: 53px 60px;
+    padding-bottom: 40px;
+  }
+
+  .reason--custom-indent-desktop {
+    padding: 46px 45px;
+    padding-bottom: 64px;
+  }
+
+  .reason__description--custom-indents {
+    padding: 0 30px;
+  }
+
+  .reason__title {
+    padding: 0 60px;
+  }
+
+  .reason__title--custom-indent-desktop {
+    padding: 0 70px;
+  }
+
+  .reason__description--custom-indents-desktop {
+    padding: 0 21px;
   }
 }
