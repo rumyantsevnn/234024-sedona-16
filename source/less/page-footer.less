@@ -32,6 +32,18 @@
   background-color: @bgc-blue;
 }
 
+.social-list__link:hover {
+  background-color: @menu-hover;
+}
+
+.social-list__link:active {
+  background-color: @menu-active;
+}
+
+.social-list__link:active .social-list__link-icon {
+  opacity: 0.3;
+}
+
 .social-list__link-icon {
   position: absolute;
   fill: @white;
@@ -59,6 +71,14 @@
   position: relative;
   width: 27px;
   height: 34px;
+}
+
+.developed-by__link:hover .developed-by__link-icon {
+  fill: @bgc-blue;
+}
+
+.developed-by__link:active .developed-by__link-icon {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
