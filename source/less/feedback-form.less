@@ -41,9 +41,9 @@
 .feedback-form__introduce-item {
   display: flex;
   align-items: center;
+  width: 100%;
   padding: 10px 0;
   padding-bottom: 11px;
-  width: 100%;
 }
 
 .feedback-form__introduce-item label {
@@ -53,14 +53,29 @@
 .feedback-form__introduce-input {
   box-sizing: border-box;
   border: none;
-  width: 100%;
   background-color: @bgc-desktop;
   padding: 15px 23px;
   padding-bottom: 16px;
   .title-font;
 }
 
+.feedback-form__introduce-item:nth-child(1) .feedback-form__introduce-input {
+  width: 229px;
+}
+
+.feedback-form__introduce-item:nth-child(2) .feedback-form__introduce-input {
+  width: 192px;
+}
+
+.feedback-form__introduce-item:nth-child(3) .feedback-form__introduce-input {
+  width: 197px;
+}
+
 .feedback-form__introduce-input::placeholder {
+  color: @black;
+}
+
+.feedback-form__introduce-input::-moz-placeholder {
   color: @black;
 }
 
@@ -72,6 +87,7 @@
 }
 
 .feedback-form__contacts-input {
+  min-height: 57px;
   box-sizing: border-box;
   border: none;
   width: 100%;
@@ -395,7 +411,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 648px;
   }
 
   .feedback-form__horizontal-line::before,
@@ -458,6 +474,18 @@
 
   .feedback-form__required-fields {
     .reset-indents;
+  }
+
+  .feedback-form__introduce-item:nth-child(1) .feedback-form__introduce-input {
+    width: 216px;
+  }
+
+  .feedback-form__introduce-item:nth-child(2) .feedback-form__introduce-input {
+    width: 178px;
+  }
+
+  .feedback-form__introduce-item:nth-child(3) .feedback-form__introduce-input {
+    width: 180px;
   }
 
   .feedback-form__item:nth-child(1) legend,
@@ -560,6 +588,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feedback-form__horizontal-line {
+    width: 960px;
+  }
+
   .feedback-form__horizontal-line::before,
   .feedback-form__horizontal-line::after {
     width: 280px;
@@ -693,6 +725,18 @@
 
   .feedback-form__item:nth-child(5) {
     padding-bottom: 18px;
+  }
+
+  .feedback-form__introduce-item:nth-child(1) .feedback-form__introduce-input {
+    width: 350px;
+  }
+
+  .feedback-form__introduce-item:nth-child(2) .feedback-form__introduce-input {
+    width: 312px;
+  }
+
+  .feedback-form__introduce-item:nth-child(3) .feedback-form__introduce-input {
+    width: 314px;
   }
 
   .visually-hidden-form {
