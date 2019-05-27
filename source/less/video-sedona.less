@@ -74,18 +74,33 @@
 .replay-button {
   position: absolute;
   top: 22px;
+  opacity: 0.5;
 }
 
 .subtitles-button {
   position: absolute;
   top: 23px;
   right: 74px;
+  opacity: 0.5;
 }
 
 .fullscreen-button {
   position: absolute;
   top: 23px;
   right: 23px;
+  opacity: 0.5;
+}
+
+.replay-button:hover,
+.subtitles-button:hover,
+.fullscreen-button:hover {
+  opacity: 1;
+}
+
+.replay-button:active,
+.subtitles-button:active,
+.fullscreen-button:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -164,6 +179,24 @@
   .fullscreen-button {
     top: 36px;
     right: 41px;
+  }
+
+  .replay-button,
+  .subtitles-button,
+  .fullscreen-button {
+    opacity: 1;
+  }
+
+  .replay-button:hover,
+  .subtitles-button:hover,
+  .fullscreen-button:hover {
+    opacity: 0.5;
+  }
+
+  .replay-button:active,
+  .subtitles-button:active,
+  .fullscreen-button:active {
+    opacity: 0.3;
   }
 }
 
