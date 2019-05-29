@@ -470,17 +470,6 @@ body {
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: url("../preview/sedona-index-mobile.jpg") 50% 0 no-repeat;
-}
-@media (min-width: 768px) {
-  html {
-    background-image: url("../preview/sedona-index-tablet.jpg");
-  }
-}
-@media (min-width: 1200px) {
-  html {
-    background-image: url("../preview/sedona-index-desktop.jpg");
-  }
 }
 body {
   margin: 0;
@@ -861,6 +850,9 @@ input[type="radio"].visually-hidden {
     height: 68px;
     top: 63px;
   }
+  .advantages__description br {
+    display: block;
+  }
 }
 @media (min-width: 1200px) {
   .advantages {
@@ -876,9 +868,6 @@ input[type="radio"].visually-hidden {
     padding: 0 37px;
     padding-right: 38px;
     padding-left: 36px;
-  }
-  .advantages__description br {
-    display: block;
   }
 }
 .page-footer {
@@ -1356,7 +1345,6 @@ input[type="radio"].visually-hidden {
     background-size: 800px auto;
   }
 }
-/* временно */
 .main-banner-wrapper {
   position: relative;
   background-image: url("../img/bg-back-mobile@1x.jpg");
