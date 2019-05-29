@@ -816,7 +816,7 @@ input[type="radio"].visually-hidden {
   }
   .advantages__item {
     text-align: center;
-    max-width: 256px;
+    max-width: 254px;
     padding: 45px;
     padding-top: 160px;
     padding-bottom: 60px;
